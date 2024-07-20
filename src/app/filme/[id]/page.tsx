@@ -1,6 +1,7 @@
 import { getDetails } from "@/app/actions/getDetails";
 import { getVideos } from "@/app/actions/getVideos";
 import Navbar from "@/app/components/Navbar";
+import { GetServerSidePropsContext } from 'next';
 import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 import  YouTubePlayer from '@/app/components/YouTubePlayer';
 
@@ -15,10 +16,16 @@ export interface Video {
   type: string;
   official: boolean;
   published_at: string;
-  id: string;
+  id: number;
 }
 
-async function  Detalhes({params}: Params){
+interface DetalhesProps {
+  params: {
+    id: number;
+  };
+}
+
+async function  Detalhes({params}: DetalhesProps){
 
   const filme = await getDetails(params.id);
   //console.log(filme);
