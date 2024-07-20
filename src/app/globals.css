@@ -18,16 +18,91 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+img{
+  min-width: 300px;
+}
+
+
+.div-details-film{
+  width: 100%;
+  height: 85vh;
+}
+
+.div-details-film img{
+  box-shadow: 2px 1px 1000px 1px rgb(251 191 36);
+}
+
+.details-film-img{
+  width: 400px;
+}
+
+.div-description{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+}
+
+.ficha-tecnica{
+  line-height: 25px;
+  padding-bottom: 10px;
+}
+
+.ficha-tecnica > h2{
+  color: rgb(251 191 36);
+  font-weight: 700;
+}
+
+.ficha-tecnica > h6{
+  font-size: 0.9rem
+}
+
+.youtube-container iframe {
+  width: 100%; /* Garante que o iframe ocupe 100% da largura do contêiner */
+  min-height: 100%; /* Garante que o iframe ocupe 100% da altura do contêiner */
+}
+
+
+@media screen and (max-width: 900px) {
+
+  img{
+    min-width: 150px;
+  }
+
+  .div-details-film{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details-film{
+    min-width: 100%;
+  }
+
+  .div-description{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .div-details-film img{
+    box-shadow: 2px 1px 100px 1px rgb(251 191 36);
+   
+  }
+
+  .ficha-tecnica{
+    width: 100%;
+  }
+
+  .youtube-container iframe {
+    width: 100%; /* Garante que o iframe ocupe 100% da largura do contêiner */
+    height: 100%; /* Garante que o iframe ocupe 100% da altura do contêiner */
   }
 }

@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TrailerView Filmes
 
-## Getting Started
+TrailerView Filmes é um aplicativo desenvolvido em aula , para a matéria de Single Page Application, com React.js e TypeScript que consome a API do The Movie Database (TMDB) para apresentar os últimos lançamentos de filmes. O app permite aos usuários visualizar detalhes de cada filme, incluindo trailers, sinopse, elenco e muito mais. Além disso, utiliza a biblioteca de ícones Lucide e o framework Tailwind CSS para estilização rápida e responsiva.
 
-First, run the development server:
+## Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Listagem dos últimos lançamentos de filmes
+- Visualização de detalhes completos dos filmes, incluindo trailers
+- Interface amigável e responsiva
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologias Utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **React.js**: Biblioteca JavaScript para construção de interfaces de usuário
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **TypeScript**: Superset de JavaScript que adiciona tipagem estática ao código
 
-## Learn More
+- **API The Movie Database (TMDB)**: Fonte de dados para os filmes e detalhes
 
-To learn more about Next.js, take a look at the following resources:
+- **Lucide Icons**: Biblioteca de ícones para uma interface mais visual e intuitiva
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Tailwind CSS**: Framework CSS para estilização rápida e responsiva
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Licença
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
