@@ -11,7 +11,7 @@ export async function getDetails(id: number) {
         method: 'GET',
         headers: {
           accept: 'application/json',
-          Authorization: apiKey
+          Authorization: `Bearer ${apiKey}`
         }
       };
 

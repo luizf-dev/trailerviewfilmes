@@ -16,7 +16,7 @@ export async function getMovies() {
         method: 'GET',
         headers: {
           accept: 'application/json',
-          Authorization: apiKey
+          Authorization: `Bearer ${apiKey}`
         }
       };
       

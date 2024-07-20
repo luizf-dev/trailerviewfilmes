@@ -10,7 +10,7 @@ export async function getVideos(id:number) {
         method: 'GET',
         headers: {
           accept: 'application/json',
-          Authorization: apiKey
+          Authorization: `Bearer ${apiKey}`
         }
       };
 
